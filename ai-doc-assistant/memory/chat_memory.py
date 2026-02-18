@@ -1,28 +1,13 @@
-class ConversationBufferMemory:
-    def __init__(self, memory_key="chat_history", return_messages=True):
-        self.memory_key = memory_key
-        self.return_messages = return_messages
-        self.messages = []
-
-    def save_context(self, inputs, outputs):
-        if "question" in inputs:
-            self.messages.append({"role": "user", "content": inputs["question"]})
-        if "answer" in outputs:
-            self.messages.append({"role": "ai", "content": outputs["answer"]})
-
-    def load_memory_variables(self, inputs):
-        if self.return_messages:
-            return {self.memory_key: self.messages}
-        return {self.memory_key: [m["content"] for m in self.messages]}
+from langchain_classic.memory import ConversationBufferMemory # type: ignore
 
 def get_memory():
-    return ConversationBufferMemory()
-
-"""from langchain.memory import ConversationBufferMemory
-
-def get_memory():
+    """
+    Returns a standard LangChain memory buffer.
+    'chat_history' is the key the chain looks for.
+    'return_messages=True' ensures it returns objects, not just strings.
+    """
     return ConversationBufferMemory(
-        memory_key="chat_history",
-        return_messages=True
+        memory_key="chat_history", 
+        return_messages=True,
+        output_key="answer"
     )
-"""
