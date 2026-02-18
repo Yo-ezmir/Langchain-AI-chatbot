@@ -1,4 +1,5 @@
-from langchain.vectorstores import Chroma
+from langchain_community.vectorstores import Chroma
+
 
 def create_vectorstore(chunks, embeddings):
     return Chroma.from_documents(
