@@ -12,16 +12,16 @@ conversation about the content using OpenAI LLMs.
 - Agentic Capabilities: Integrated Tools for dynamic reasoning and external function calls.
 
 ## Project Structure
-ai-doc-assistant
-├── app.py        - Streamlit Frontend U                
-├── loaders/      -Document loading logic (PyPDF)             
-├── processing/     -Text splitting and cleaning           
-├── embeddings/      -Vector embedding configurations        
-├── vectorstore/      -ChromaDB management        
-├── memory/            -Chat history and BufferMemory       
-├── chains/            -ConversationalRetrievalChain setup        
-├── tools/             -Custom Agent tools       
-└── requirements.txt    Project dependencies       
+## ai-doc-assistant
+├── app.py        # Streamlit Frontend U                
+├── loaders/      #Document loading logic (PyPDF)             
+├── processing/     #Text splitting and cleaning           
+├── embeddings/      #Vector embedding configurations        
+├── vectorstore/      #ChromaDB management        
+├── memory/            #Chat history and BufferMemory       
+├── chains/            #ConversationalRetrievalChain setup        
+├── tools/             #Custom Agent tools       
+└── requirements.txt    #Project dependencies       
 
 ## Building Blocks
 Following the principles of Building Intelligent LLM Apps, this project implements:
@@ -50,3 +50,4 @@ python -m streamlit run app.py
 
 Developer: Yonatan Azmir
 Date: February 2026
+
