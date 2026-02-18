@@ -13,8 +13,8 @@ conversation about the content using OpenAI LLMs.
 
 ## Project Structure
 ## ai-doc-assistant
-├── app.py        # Streamlit Frontend U                
-├── loaders/      #Document loading logic (PyPDF)             
+├── app.py           # Streamlit Frontend U                
+├── loaders/         #Document loading logic (PyPDF)             
 ├── processing/     #Text splitting and cleaning           
 ├── embeddings/      #Vector embedding configurations        
 ├── vectorstore/      #ChromaDB management        
@@ -34,7 +34,7 @@ Following the principles of Building Intelligent LLM Apps, this project implemen
 ## Installation and Setup
 Run the following commands in your terminal to set up the project:
 
-git clone https://github.com/your-username/ai-doc-assistant.git
+git clone https://github.com/yo-ezmir/ai-doc-assistant.git
 cd ai-doc-assistant
 python -m venv venv
 source venv/Scripts/activate
@@ -50,4 +50,5 @@ python -m streamlit run app.py
 
 Developer: Yonatan Azmir
 Date: February 2026
+
 
