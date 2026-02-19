@@ -1,5 +1,5 @@
 from langchain_openai import ChatOpenAI
-from langchain.chains import ConversationalRetrievalChain
+from langchain_classic.chains import ConversationalRetrievalChain
 
 def build_chain(vectorstore, memory):
     llm = ChatOpenAI(
