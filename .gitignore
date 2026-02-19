@@ -1,3 +1,17 @@
+<<<<<<< HEAD
 __pycache__/
 .env
 venv/
+=======
+# Secrets
+*.env
+ai-doc-assistant/.env
+
+# Python cache
+__pycache__/
+.pytest_cache/
+
+# Virtual env
+venv/
+env/
+>>>>>>> ae002d671aa1c445da32b78debcde006d78f4ac3
