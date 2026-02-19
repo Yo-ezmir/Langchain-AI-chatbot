@@ -1,9 +1,12 @@
 langchain
 langchain-openai
-openai
-pypdf
-chromadb
-python-dotenv
-streamlit
+langchain-google-genai
+langchain-anthropic
 langchain-community
 langchain-text-splitters
+openai
+pypdf
+faiss-cpu
+python-dotenv
+streamlit
+duckduckgo-search
